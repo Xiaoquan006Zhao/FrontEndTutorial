@@ -1,0 +1,96 @@
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+}
+
+.controls {
+  font-size: 20px;
+  width: 700px;
+  margin: 2rem auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: red;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #f4f4f4;
+  max-width: 1280px;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+nav #bpm-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav #bpm-control label,
+nav #bpm-control div,
+#start-metronome {
+  margin-bottom: 1rem;
+  margin-right: 0.3rem;
+}
+
+section .controls {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+section #timer {
+  grid-column: 1 / span 2;
+}
+
+.keys {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
+
+  font-size: 40px;
+  margin: 2rem auto;
+}
+
+.keys kbd {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.keys .playing kbd {
+  transform: scale(1.2);
+  transition: all 0.07s;
+}
+
+.keys .key {
+  border-radius: 10%;
+  background: #ddd;
+}
